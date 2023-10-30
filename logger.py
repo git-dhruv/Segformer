@@ -25,8 +25,8 @@ if __name__ == "__main__":
 
     if loss_values is not None and miou_values is not None:
         # Convert tensors to lists for plotting
-        loss_values_list = loss_values.tolist()
-        miou_values_list = miou_values.tolist()
+        loss_values_list = loss_values
+        miou_values_list = miou_values
 
         # Create the plots
         plot_values(loss_values_list, 'Training Loss Over Time', 'Loss', 'loss_plot.png')
