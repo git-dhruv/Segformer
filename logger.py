@@ -15,13 +15,12 @@ def plot_values(values, title, y_label, file_name):
     plt.xlabel('Epoch')
     plt.ylabel(y_label)
     plt.grid(True)
-    plt.savefig(file_name)
     plt.show()
 
 if __name__ == "__main__":
     # Load the tensors
-    loss_values = load_tensor_from_file('LossPerEp.pt')
-    miou_values = load_tensor_from_file('miouPerEp.pt')
+    loss_values = load_tensor_from_file('savedVars/LossPerEp.pt')
+    miou_values = load_tensor_from_file('savedVars/miouPerEp.pt')
 
     if loss_values is not None and miou_values is not None:
         # Convert tensors to lists for plotting
