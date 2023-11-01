@@ -18,7 +18,7 @@ def plot_values(values, title, y_label, file_name):
     plt.show()
 
 if __name__ == "__main__":
-    # Load the tensors
+    # Load the tens
     loss_values = load_tensor_from_file('savedVars/LossPerEp.pt')
     miou_values = load_tensor_from_file('savedVars/miouPerEp.pt')
 
