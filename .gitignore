@@ -6,3 +6,4 @@ savedVars/*
 *.pt
 *.png
 weights/*
+*.gif
